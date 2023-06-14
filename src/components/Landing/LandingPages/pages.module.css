@@ -1,0 +1,101 @@
+/*HEADER*/
+ 
+
+.textContainer {
+  margin-bottom: 1rem;
+}
+
+.redesSociales {
+  margin-top: 1rem;
+}
+
+  
+  .showcaseContainer  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    
+  }
+  
+  .h1Inicio {
+  color: #1dd9ff;
+  font-style:bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  padding-top: 2rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+     
+  }
+  
+  .parrafosInicio {
+    color:#bdfc58;
+    font-style:bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+  
+    .enlaceInicio{
+      text-decoration: none;
+      line-height: none;
+    }
+  
+  
+    /*REDES SOCIALES*/
+  
+    .containerRedes {
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      flex-wrap: wrap;
+      gap: 2rem;
+     
+    }
+  
+  
+   .globalButtons {
+      width: 10rem;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color:#092931;
+      padding: 0.5rem;
+      border-radius: 19px;
+      color: white;
+      box-shadow: 2px 7px 45px 8px #000;
+     
+      
+  
+    }
+  
+    .parrafosButtons {
+      padding: 0;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  
+    .spanInicio {
+      padding: 0;
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  
+    
+  
+    .hoverButtons {
+      transition: .2s ease;
+    }
+  
+  
+    .hoverButtons:hover {
+      scale: 1.05;
+    }

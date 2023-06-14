@@ -1,0 +1,129 @@
+.containerLogros  {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: anywhere;
+    padding-top: 2rem;
+    background-color: rgb(4,45,62);
+  }
+  
+  .logros {
+    width: 100vw;
+    height: 100%;
+  }
+
+  
+  .containerBoxes {
+    display: grid;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    gap: 2rem;
+    padding: 4rem;
+    
+    
+    
+  
+  }
+  
+  .box {
+  
+    border-radius: 1.5rem;  
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+   
+  }
+  
+  .box:hover {
+  
+    transform: rotate(3deg);
+    scale: 1.05;
+    cursor: pointer;
+   
+   
+   
+  }
+  
+    .box:first-child {
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 4rem;
+    color: white;
+    transform: none;
+    scale: none;
+    
+    
+    
+   
+  }
+  
+  .box:first-child .descriptionLogro {
+  
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 1rem;
+    
+    
+   
+  }
+  
+  .image1 {
+    background: url('.././../../assets/fotoEscaleras.jpg');
+    
+  }
+  
+  .image2 {
+    background: url('.././../../assets/ponenciaTres.jpg');
+    
+  }
+  
+  .image3 {
+    background: url('.././../../assets/esisPonencia.jpg');
+    
+  }
+  
+  .image4 {
+    background: url('.././../../assets/Premio.jpg');
+    
+  }
+  
+  .image5 {
+    background: url('.././../../assets/paseoEdna.jpg');
+    
+  }
+  
+  
+  
+  .image {
+   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 1.5rem 1.5rem 0 0;
+  
+    
+  }
+  
+  .textLogro {
+    padding: 1rem;
+  }
+
+  .iconLogros {
+    width: 4rem;
+    height: 4rem;
+    background: url('.././../../assets/succeed-svgrepo-com.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+   
+    
+    
+      
+   

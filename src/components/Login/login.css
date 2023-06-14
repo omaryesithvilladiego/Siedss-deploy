@@ -1,0 +1,294 @@
+
+
+*{
+  
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/login/pexels-miguel-á-padriñán-19670.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.father {
+    display: flex;
+    border: 2px solid rgb(14,116,142);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(14,116,142);
+    transition: .2s;
+    overflow: hidden;
+    backdrop-filter: blur(7px);
+    height: 32rem;
+   
+}
+
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 30rem;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+
+  
+}
+
+
+
+
+.logo-siedss {
+    background: url("../../assets/login/SIEDDS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+
+.login-content .inputbox {
+    position: relative;
+    margin: 15px 0;
+    width: 250px;
+    border-bottom: 2px solid #449485;
+}
+
+.registro .inputbox {
+    position: relative;
+    margin: 15px 0;
+    width: 250px;
+    border-bottom: 2px solid #449485;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: .5s ease-in-out;
+    
+ }
+ 
+
+
+.registro input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+ 
+}
+
+.login-content input:focus ~ label{
+    top: 1px;
+}
+
+  
+.login-content input:valid ~ label{
+    top: 1px;
+}
+
+
+.registro input:focus ~ label
+{
+   opacity: 0;
+}
+
+.registro input:valid ~ label {
+    opacity: 0;
+}
+
+
+.login-content input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 35px 0 5px;
+
+}
+
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.father button {
+    padding: .29rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: 0.2s;
+    background-color: transparent;
+    border: 2px solid rgb(68,148,133);
+    width: 9rem;
+    transform: translateX(6.2rem);
+    cursor:pointer
+}
+
+.father button:last-child {
+  margin-top: 1rem;
+ 
+}
+
+
+.registro .button-registro:hover {
+    scale: 1.01;
+}
+
+.registro .button-registro {
+    padding: .29rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    position: absolute;
+    right: 2rem;
+    transition: 0.2s;
+    background-color: transparent;
+    border: 2px solid rgb(68,148,133);
+    width: 9rem;
+}
+
+.father button:hover {
+    scale: 1.01;
+}
+
+.father button ion-icon {
+    font-size: 1.5rem;
+}
+
+
+/* Contenido extra */
+
+@media (min-width: 720px) {
+    .login-content  {
+      
+        border-right: none;
+        transition: .2s ease-in-out;
+
+    }
+    .extra-content {
+        width: 20rem;
+        height: 32rem;
+        border-radius: 0px 10px 10px 0px;
+        border-left: none;
+        background: url("../../assets/login/Imagen1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        transition: .2s;
+        background-position: center;
+       
+        
+      
+    }
+
+    .hide-extra-content {
+        background: none;
+         transition: .2s ease-in-out;
+
+    }
+
+    .trasladar-login {
+        transform: translateX(20rem); 
+     
+    }
+
+    .father {
+        display: flex;
+        border: 2px solid rgb(14,116,142);
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px rgb(14,116,142);
+        max-width: 100%;
+        transition: .2s;
+       
+    }
+    
+}
+
+
+.arrow {
+   transform: rotate(180deg);
+   transition: .2s ease-in-out;
+}
+
+/* Contenido extra */
+
+.registro {
+    
+    position: absolute;
+    height: 30rem;
+    width: 18.78rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    border-radius: 0.5rem  0  0 0.5rem; 
+    display: none;
+   
+}
+
+@media (max-width: 720px) {
+  
+    .trasladar-login {
+        transform: translateY(32rem); 
+    }
+
+    .registro {
+        border-radius: 0.5rem  0.5rem  0.5rem 0.5rem; 
+    }
+
+}
+
+
+
+.showregistro {
+    display: flex;
+    transition: .2s ease-in;
+}
+
+
+.icon-close {
+   
+    width: 1rem;
+    padding: 0;
+    margin: 1rem;
+    position: absolute;
+    top: -0.5rem;
+    left: 15rem;
+}
+
+.icon-close ion-icon {
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.icon-close ion-icon:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
